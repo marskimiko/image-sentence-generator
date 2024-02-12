@@ -1,5 +1,4 @@
 import {useState} from 'react';
-
 export default function Home() {
 	const [object, setObject] = useState('thief');
 	const [subject, setSubject] = useState('police');
@@ -14,27 +13,27 @@ export default function Home() {
 	const fetchGeneratedSentence = async e => {
 		e.preventDefault();
     console.log('generate')
-		setBtnText('Generating');
-		try {
-			// const res = await axios.get(`/api/generate`, {
-			// 	params: {
-			// 		object,
-			// 		subject,
-			// 		verb
-			// 	}
-			// });
-			// setResponse(res.data);
-			// console.log(res.data);
-		} catch (err) {
-			console.log(err);
-		} finally {
-			setBtnText('Generate');
-		}
+		// setBtnText('Generating');
+		// try {
+		// 	const res = await axios.get(`/api/generate`, {
+		// 		params: {
+		// 			object,
+		// 			subject,
+		// 			verb
+		// 		}
+		// 	});
+		// 	setResponse(res.data);
+		// 	console.log(res.data);
+		// } catch (err) {
+		// 	console.log(err);
+		// } finally {
+		// 	setBtnText('Generate');
+		// }
 	};
 
 	return (
 		<div>
-			<h2>Sentence Generator App</h2>
+			<h2>Sentence Generator</h2>
 			<h3>
 				Quickly generate an english sentence using few keywords
 			</h3>
